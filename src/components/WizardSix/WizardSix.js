@@ -2,8 +2,7 @@ import React,  { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {connect } from 'react-redux';
 
-import updateCost from '../../ducks/reducer';
-import updateDown from '../../ducks/reducer';
+import { updateCost, updateDown } from '../../ducks/reducer';
 
 class WizardSix extends Component {
 
@@ -35,7 +34,8 @@ function mapStateToProps( state ) {
     const { cost, downPayment } = state;
 
     return {
-        cost, downPayment
+        cost,
+        downPayment
     }
 }
 
